@@ -3,5 +3,6 @@
 __pycache__
 myvenv
 db.postgresql
+psycopg2
 /static
 .DS_Store
