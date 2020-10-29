@@ -1,4 +1,5 @@
 import os
+import django_heroku
 """
 Django settings for testsite project.
 
@@ -149,3 +150,6 @@ else:
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+DEBUG = True
+django_heroku.settings(locals())
