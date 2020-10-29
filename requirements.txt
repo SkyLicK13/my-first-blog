@@ -1,3 +1,4 @@
 Django~=2.2.4
 whitenoise
+django_heroku
 psycopg2
