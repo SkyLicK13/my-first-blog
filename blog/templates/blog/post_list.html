@@ -3,20 +3,16 @@
         <title>SkyLicK13'th BLOG</title>
     </head>
     <body>
-        <div>
-            <h1><a href="/">SkyLicK13'th Blog</a></h1>
-        </div>
+    <div>
+    <h1><a href="/">SkyLicK13'th First Blog</a></h1>
+</div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">ПЕРВЫЙ</a></h2>
-            <p>Тут написано что-то одно.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">ВТОРОЙ</a></h2>
-            <p>А тут что-то другое.</p>
-        </div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     </body>
 </html>
